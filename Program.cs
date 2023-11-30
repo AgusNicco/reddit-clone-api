@@ -34,6 +34,18 @@ app.MapGet("/posts/{index}", (int index) =>
     return Results.Ok(postsToReturn);
 });
 
+app.MapGet("/posts", () =>
+{
+    int totalPosts = posts.Count - 1;
+    int index = Random.Shared.Next(0, totalPosts);
+    List<RedditPost> postsToReturn = new List<RedditPost>();
+    for (int i = 0; i < 20; i++)
+    {
+        postsToReturn.Add(posts[index + i % totalPosts]);
+    }
+    return Results.Ok(postsToReturn);
+});
+
 
 
 app.UseHttpsRedirection();

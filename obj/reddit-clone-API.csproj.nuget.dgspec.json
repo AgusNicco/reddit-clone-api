@@ -1,26 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/agus/Documents/my-code-dir/Projects/reddit-clone-API/reddit-clone-API.csproj": {}
+    "C:\\Users\\juan.niccolini\\Documents\\WebDev\\reddit-clone-api\\reddit-clone-API.csproj": {}
   },
   "projects": {
-    "/Users/agus/Documents/my-code-dir/Projects/reddit-clone-API/reddit-clone-API.csproj": {
+    "C:\\Users\\juan.niccolini\\Documents\\WebDev\\reddit-clone-api\\reddit-clone-API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/agus/Documents/my-code-dir/Projects/reddit-clone-API/reddit-clone-API.csproj",
+        "projectUniqueName": "C:\\Users\\juan.niccolini\\Documents\\WebDev\\reddit-clone-api\\reddit-clone-API.csproj",
         "projectName": "reddit-clone-API",
-        "projectPath": "/Users/agus/Documents/my-code-dir/Projects/reddit-clone-API/reddit-clone-API.csproj",
-        "packagesPath": "/Users/agus/.nuget/packages/",
-        "outputPath": "/Users/agus/Documents/my-code-dir/Projects/reddit-clone-API/obj/",
+        "projectPath": "C:\\Users\\juan.niccolini\\Documents\\WebDev\\reddit-clone-api\\reddit-clone-API.csproj",
+        "packagesPath": "C:\\Users\\juan.niccolini\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\juan.niccolini\\Documents\\WebDev\\reddit-clone-api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/agus/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\juan.niccolini\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -71,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
