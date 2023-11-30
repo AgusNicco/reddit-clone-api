@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "8gCi9ejMgbMHd4wJWB2mJZiSfY87WQJiThz3uyZs6rk=",
+  "Source": "reddit-clone-API",
+  "BasePath": "_content/reddit-clone-API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

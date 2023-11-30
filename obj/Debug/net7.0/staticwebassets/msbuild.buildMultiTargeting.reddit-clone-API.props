@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/reddit-clone-API.props" />
+</Project>
