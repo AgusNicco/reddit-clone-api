@@ -55,7 +55,7 @@ app.MapGet("/search/{searchTerm}", (string searchTerm) =>
     List<RedditPost> postsToReturn = new List<RedditPost>();
     foreach (RedditPost post in posts)
     {
-        if (post.NormalizedBody.Contains(searchTerm))
+        if (post.Summary.Contains(searchTerm))
         {
             postsToReturn.Add(post);
         }
