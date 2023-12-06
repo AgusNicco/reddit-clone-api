@@ -25,12 +25,15 @@ List<RedditPost> posts = JsonConvert.DeserializeObject<List<RedditPost>>(json);
 
 app.MapGet("/posts/{index}", (int index) =>
 {
+    if (index < 0) 
+        index = 0;
     index *= 20;
-    int totalPosts = posts.Count - 1;
+    int maxIndex = (posts.Count - 1) / 20;
     List<RedditPost> postsToReturn = new List<RedditPost>();
+    
     for (int i = 0; i < 20; i++)
     {
-        postsToReturn.Add(posts[index + i % totalPosts]);
+        postsToReturn.Add(posts[(index + i) % maxIndex]);
     }
     return Results.Ok(postsToReturn);
 });
@@ -47,6 +50,20 @@ app.MapGet("/posts", () =>
     return Results.Ok(postsToReturn);
 });
 
+app.MapGet("/search/{searchTerm}", (string searchTerm) =>
+{
+    List<RedditPost> postsToReturn = new List<RedditPost>();
+    foreach (RedditPost post in posts)
+    {
+        if (post.NormalizedBody.Contains(searchTerm))
+        {
+            postsToReturn.Add(post);
+        }
+        if (postsToReturn.Count >= 20)
+            break;
+    }
+    return Results.Ok(postsToReturn);
+});
 
 
 app.UseHttpsRedirection();
