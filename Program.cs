@@ -65,6 +65,14 @@ app.MapGet("/search/{searchTerm}", (string searchTerm) =>
     return Results.Ok(postsToReturn);
 });
 
+app.MapGet("/post/{id}", (string id ) =>
+{
+    RedditPost post = posts.Find(x=> x.Id == id);
+    return Results.Ok(post);
+});
+
+
+
 
 app.UseHttpsRedirection();
 
